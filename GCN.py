@@ -11,3 +11,9 @@ print(A)
 
 X = np.array([[i, -i] for i in range(A.shape[0])]).astype(dtype=float)
 print(X)
+
+print(A.dot(X))
+
+print(X.shape[0])
+print(X.shape[1])
+
