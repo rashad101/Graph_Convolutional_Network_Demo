@@ -25,4 +25,10 @@ print(A_hat.dot(X))
 D = np.array(np.sum(A, axis=0))
 print(D)
 D = np.array(np.diag(D))
-print(D)
+
+ans = np.linalg.inv(D).dot(A) # D**-1 * A
+print(ans)
+#With propagation rule
+
+ans = np.linalg.inv(D).dot(A).dot(X)
+print(ans)
