@@ -17,3 +17,12 @@ print(A.dot(X))
 print(X.shape[0])
 print(X.shape[1])
 
+I = np.array(np.eye(A.shape[0]))
+print(I)
+A_hat = A+I
+print(A_hat.dot(X))
+
+D = np.array(np.sum(A, axis=0))
+print(D)
+D = np.array(np.diag(D))
+print(D)
